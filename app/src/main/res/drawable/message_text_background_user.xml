@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/colorPrimary"></solid>
+    <corners android:radius="5dp"></corners>
+    <margin android:left="10dp" android:right="10dp"></margin>
+    <padding android:left="25dp" android:right="25dp" android:bottom="20dp" android:top="20dp"></padding>
+
+</shape-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true"
+        android:state_pressed="true">
+        <shape android:padding="10dp" android:shape="rectangle">
+            <solid android:color="@color/messageUserColor" />
+            <stroke android:width="2dp" android:color="@color/messageUserColor" />
+            <corners android:bottomLeftRadius="15dp" android:bottomRightRadius="15dp" android:topLeftRadius="15dp" android:topRightRadius="15dp" />
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_focused="true">
+        <shape android:padding="10dp" android:shape="rectangle">
+            <solid android:color="@color/messageUserColor" />
+            <stroke android:width="2dp" android:color="@color/messageUserColor" />
+            <corners android:bottomLeftRadius="15dp" android:bottomRightRadius="15dp" android:topLeftRadius="15dp" android:topRightRadius="15dp" />
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:padding="10dp"
+            android:shape="rectangle">
+            <solid android:color="@color/messageUserColor" />
+            <corners android:bottomLeftRadius="15dp" android:bottomRightRadius="15dp" android:topLeftRadius="15dp" android:topRightRadius="15dp" />
+        </shape>
+    </item>
+</selector>

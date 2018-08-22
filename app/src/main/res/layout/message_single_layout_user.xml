@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_single_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:weightSum="10"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_profile_user"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0"
+        android:src="@drawable/default_avatar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignTop="@+id/message_profile_user"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_toStartOf="@+id/message_profile_user"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/message_profile_user"
+            android:layout_marginRight="0dp"
+            android:layout_toStartOf="@+id/message_profile_user"
+            android:layout_weight="1"
+            android:background="@drawable/message_text_background_user"
+            android:padding="5dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="Message Text"
+            android:textColor="#444444"
+            android:textSize="15sp"
+            app:layout_constraintRight_toLeftOf="@+id/message_profile_user"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/message_latex_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/message_image_user"
+            android:layout_alignEnd="@+id/message_user"
+            android:layout_toStartOf="@+id/message_profile_user"
+            android:layout_weight="1"
+            android:background="@drawable/message_text_background_user"
+            app:layout_constraintRight_toLeftOf="@+id/message_profile_user"
+            app:layout_constraintTop_toBottomOf="@+id/message_user"></io.github.kexanie.library.MathView>
+
+        <ImageView
+            android:id="@+id/message_image_user"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignEnd="@+id/message_user"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/message_user"
+            android:layout_marginRight="-1dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/message_text_background_user"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintRight_toLeftOf="@+id/message_profile_user"
+            app:layout_constraintTop_toBottomOf="@+id/message_latex_user" />
+
+        <TextView
+            android:id="@+id/time_text_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/message_user"
+            android:layout_alignEnd="@+id/message_user"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="00:00"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/message_user"
+            app:layout_constraintLeft_toLeftOf="@+id/message_user" />
+    </LinearLayout>
+
+
+</RelativeLayout>

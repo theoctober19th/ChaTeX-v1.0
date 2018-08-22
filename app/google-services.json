@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "379169979265",
+    "firebase_url": "https://chatex-1d1e3.firebaseio.com",
+    "project_id": "chatex-1d1e3",
+    "storage_bucket": "chatex-1d1e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379169979265:android:9c4ed7f45d0f9737",
+        "android_client_info": {
+          "package_name": "com.thecoffeecoders.chatex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379169979265-4nt3tkpk8cobuqjmvfmhd8020be0hkr7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thecoffeecoders.chatex",
+            "certificate_hash": "09ba2d2f18ee3ea69443b4684a2934ff32e1335e"
+          }
+        },
+        {
+          "client_id": "379169979265-i54dv47f9tvc7sh0dcuk1sqfcd89mhhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxL8sNqc4586S_fCdQW-f6bZtGaAmbRLI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379169979265-i54dv47f9tvc7sh0dcuk1sqfcd89mhhl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

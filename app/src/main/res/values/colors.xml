@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- The colors here can be changed as per need
+    SCHEME 1 (PURPLE):
+    primaryDark #512da7
+    primary #673bb7
+
+    SCHEME 2 (GREEN):
+    primaryDark 2c8c33
+    primary 3fa346
+
+
+    SCHEME 3 (BLUE):
+    primaryDark #1e5091
+    primary 3679d1
+    -->
+
+    <color name="colorPrimary">#3679d1</color>
+    <color name="colorPrimaryDark">#1e5091</color>
+    <color name="colorAccent">#ff5521</color>
+    <color name="darkColor">#222222</color>
+    <color name="defaultTextColor">#444444</color>
+    <color name="messageUserColor">#8cb5f7</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    tools:context="com.thecoffeecoders.chatex.ChatActivity">
+
+    <include
+        android:id="@+id/chat_app_bar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"></include>
+
+    <GridLayout
+        android:id="@+id/help_buttons_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/preview_pane_linear_layout"
+        android:layout_alignParentStart="true"
+        android:columnCount="9"
+        android:elevation="0dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/latex_underscore"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_subscript" />
+
+        <Button
+            android:id="@+id/latex_square_brackets"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_square_brackets" />
+
+        <Button
+            android:id="@+id/latex_curly_braces"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_curly_brackets" />
+
+        <Button
+            android:id="@+id/latex_parentheses"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_parenthesis"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_power"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_superscript"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_squareRoot"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_root"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_integral"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_integral"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_absolute"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_absolute"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_complement"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_complement_bar"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_fraction"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_fraction"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_greaterThanOrEqualsTo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_greater_than_or_equals_to"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_lessThanOrEqualsTo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_less_than_or_equals_to"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_infinity"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_infinity"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_intersection"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_intersection"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_union"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_union"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_limit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_limit"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_not_equal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_not_equal"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_partialDerivatives"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_partial_derivative"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_plusOrMinus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_plus_or_minus"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_doubleArrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_rightarrow_double"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_singleArrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_rightarrow_single"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_summation"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_summation"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_triangleDown"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_triangle_down"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_triangleUp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_triangle_up"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_vector"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_vector"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_back_slash"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_backslash"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/latex_clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/math_clear"
+            android:elevation="1dp" />
+
+    </GridLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/message_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chat_app_bar"
+        android:layout_above="@+id/help_buttons_grid">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/chat_app_bar"
+            android:layout_alignParentStart="true"></android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageButton
+            android:id="@+id/chat_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/chat_math_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_math_24dp" />
+
+        <EditText
+            android:id="@+id/chat_message_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.04"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Enter Message..."
+            android:inputType="textMultiLine"
+            android:paddingBottom="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="14dp"
+            android:singleLine="false"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/chat_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_send_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/preview_pane_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/move_cursor_left_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left_black_36dp" />
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/math_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/move_cursor_left_button"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/move_cursor_left_button"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+        </io.github.kexanie.library.MathView>
+
+        <ImageButton
+            android:id="@+id/move_cursor_right_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_36dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
